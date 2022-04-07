@@ -1,0 +1,19 @@
+<h1>Laboratorio IV 2022</h1>
+
+<h2>{{title}}</h2>
+
+<p>Realizar una aplicacion que se le ingresen dos edades en dos cuadro de textos edadUno, EdadDos
+  mostrar el promedio y la suma en dos cuadros de textos nuevos. Botones "calcular" y "limpiar cuadros de textos"</p>
+
+  <hr>
+  Edad1 : 
+  <input type="number" [(ngModel)]="calc.edad1">
+  Edad 2: 
+  <input type="number" [(ngModel)]="calc.edad2">
+
+  <input type="button" (click)="calc.Calcular()" value="Calcular"> 
+  <input type="button" (click)="Limpiar()" value="Limpiar"> 
+<hr>
+  Suma= <input type="number" [(ngModel)]="calc.suma">
+  <br>
+  Promedio= <input type="number" [(ngModel)]="calc.promedio">
